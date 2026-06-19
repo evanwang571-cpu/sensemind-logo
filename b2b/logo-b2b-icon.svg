@@ -21,21 +21,21 @@
 
   <rect width="400" height="400" rx="48" fill="url(#bg)"/>
 
-  <!-- 双层六边形 -->
-  <polygon points="200,80 304,140 304,260 200,320 96,260 96,140"
+  <!-- 双层六边形 r=155/138, 中心(210,210) -->
+  <polygon points="210,55 344,132 344,288 210,365 76,288 76,132"
            fill="none" stroke="url(#goldHex)" stroke-width="2.5" stroke-linejoin="round"/>
-  <polygon points="200,100 284,148 284,252 200,300 116,252 116,148"
+  <polygon points="210,72 330,141 330,279 210,348 90,279 90,141"
            fill="url(#goldHex)" fill-opacity="0.03"
            stroke="url(#goldHex)" stroke-width="0.8" stroke-linejoin="round"/>
 
-  <circle cx="200" cy="80" r="3" fill="url(#goldHex)" opacity="0.7"/>
-  <circle cx="304" cy="140" r="3" fill="url(#goldHex)" opacity="0.7"/>
-  <circle cx="304" cy="260" r="3" fill="url(#goldHex)" opacity="0.7"/>
-  <circle cx="200" cy="320" r="3" fill="url(#goldHex)" opacity="0.7"/>
-  <circle cx="96" cy="260" r="3" fill="url(#goldHex)" opacity="0.7"/>
-  <circle cx="96" cy="140" r="3" fill="url(#goldHex)" opacity="0.7"/>
+  <circle cx="210" cy="55" r="3" fill="url(#goldHex)" opacity="0.7"/>
+  <circle cx="344" cy="132" r="3" fill="url(#goldHex)" opacity="0.7"/>
+  <circle cx="344" cy="288" r="3" fill="url(#goldHex)" opacity="0.7"/>
+  <circle cx="210" cy="365" r="3" fill="url(#goldHex)" opacity="0.7"/>
+  <circle cx="76" cy="288" r="3" fill="url(#goldHex)" opacity="0.7"/>
+  <circle cx="76" cy="132" r="3" fill="url(#goldHex)" opacity="0.7"/>
 
-  <!-- SM — 与主品牌比例一致 -->
+  <!-- SM -->
   <path d="M 118,282 C 135,218 145,175 147,142 C 153,170 178,212 192,200 C 206,189 213,177 220,177 C 227,177 234,189 248,200 C 262,212 287,170 293,142 C 295,175 305,218 322,282"
         fill="none" stroke="url(#goldM)" stroke-width="12"
         stroke-linecap="round" stroke-linejoin="round"/>

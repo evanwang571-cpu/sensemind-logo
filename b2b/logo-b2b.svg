@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 640" width="600" height="640">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 660" width="600" height="660">
   <defs>
     <linearGradient id="goldHex" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#B8942E"/>
@@ -19,27 +19,26 @@
     </radialGradient>
   </defs>
 
-  <rect width="600" height="640" fill="url(#bg)"/>
+  <rect width="600" height="660" fill="url(#bg)"/>
 
-  <!-- ===== 双层六边形 ===== -->
-  <!-- 外框 -->
-  <polygon points="300,108 443,190 443,352 300,434 157,352 157,190"
+  <!-- ===== 双层六边形（放大包住 SM） ===== -->
+  <!-- 外框 r=205，中心(300,270) -->
+  <polygon points="300,65 478,167 478,373 300,475 122,373 122,167"
            fill="none" stroke="url(#goldHex)" stroke-width="2.5" stroke-linejoin="round"/>
-  <!-- 内框 -->
-  <polygon points="300,132 420,202 420,338 300,408 180,338 180,202"
+  <!-- 内框 r=185 -->
+  <polygon points="300,85 460,177 460,363 300,455 140,363 140,177"
            fill="url(#goldHex)" fill-opacity="0.03"
            stroke="url(#goldHex)" stroke-width="1" stroke-linejoin="round"/>
 
   <!-- 顶点 -->
-  <circle cx="300" cy="108" r="3.5" fill="url(#goldHex)" opacity="0.7"/>
-  <circle cx="443" cy="190" r="3.5" fill="url(#goldHex)" opacity="0.7"/>
-  <circle cx="443" cy="352" r="3.5" fill="url(#goldHex)" opacity="0.7"/>
-  <circle cx="300" cy="434" r="3.5" fill="url(#goldHex)" opacity="0.7"/>
-  <circle cx="157" cy="352" r="3.5" fill="url(#goldHex)" opacity="0.7"/>
-  <circle cx="157" cy="190" r="3.5" fill="url(#goldHex)" opacity="0.7"/>
+  <circle cx="300" cy="65" r="3.5" fill="url(#goldHex)" opacity="0.7"/>
+  <circle cx="478" cy="167" r="3.5" fill="url(#goldHex)" opacity="0.7"/>
+  <circle cx="478" cy="373" r="3.5" fill="url(#goldHex)" opacity="0.7"/>
+  <circle cx="300" cy="475" r="3.5" fill="url(#goldHex)" opacity="0.7"/>
+  <circle cx="122" cy="373" r="3.5" fill="url(#goldHex)" opacity="0.7"/>
+  <circle cx="122" cy="167" r="3.5" fill="url(#goldHex)" opacity="0.7"/>
 
-  <!-- ===== 艺术版 SM（与主品牌完全一致的坐标） ===== -->
-  <!-- M — 山型，粗 15px -->
+  <!-- ===== 艺术版 SM（主品牌坐标） ===== -->
   <path d="M 160,390
            C 185,300 195,240 198,195
            C 205,235 240,295 260,278
@@ -50,7 +49,6 @@
         fill="none" stroke="url(#goldM)" stroke-width="15"
         stroke-linecap="round" stroke-linejoin="round"/>
 
-  <!-- S — 细 5px，亮金 -->
   <path d="M 425,165
            C 340,115 235,170 248,228
            C 262,288 388,290 348,345
@@ -59,27 +57,27 @@
         stroke-linecap="round" stroke-linejoin="round"/>
 
   <!-- ===== 品牌文字 ===== -->
-  <text x="300" y="505" text-anchor="middle"
+  <text x="300" y="528" text-anchor="middle"
         font-family="'Helvetica Neue', Helvetica, Arial, sans-serif"
         font-size="48" letter-spacing="4">
     <tspan font-weight="300" fill="#D4AF37">Sense</tspan><tspan font-weight="600" fill="#E8D48B">Mind</tspan>
   </text>
 
-  <text x="300" y="548" text-anchor="middle"
+  <text x="300" y="570" text-anchor="middle"
         font-family="'PingFang SC', 'Noto Sans SC', 'Heiti SC', 'Microsoft YaHei', sans-serif"
         font-size="25" font-weight="400" fill="#C9A84C" letter-spacing="14">
     风味求索
   </text>
 
-  <line x1="200" y1="564" x2="400" y2="564" stroke="url(#goldHex)" stroke-width="0.8" opacity="0.3"/>
+  <line x1="200" y1="586" x2="400" y2="586" stroke="url(#goldHex)" stroke-width="0.8" opacity="0.3"/>
 
-  <text x="300" y="588" text-anchor="middle"
+  <text x="300" y="610" text-anchor="middle"
         font-family="'PingFang SC', 'Noto Sans SC', 'Heiti SC', sans-serif"
         font-size="11" font-weight="400" fill="#8B7A4E" letter-spacing="4" opacity="0.7">
     风味求索（杭州）生物科技有限公司
   </text>
 
-  <text x="300" y="610" text-anchor="middle"
+  <text x="300" y="632" text-anchor="middle"
         font-family="'Helvetica Neue', Helvetica, Arial, sans-serif"
         font-size="9" font-weight="300" fill="#6B5A2E" letter-spacing="5" opacity="0.5">
     FROM SCIENCE TO ART · RELIABLE FLAVOR SOLUTIONS
