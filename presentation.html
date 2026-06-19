@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SenseMind 风味求索 — 品牌视觉方案</title>
+  <style>
+    * { margin:0; padding:0; box-sizing:border-box; }
+    body { background:#0A0A0A; color:#C9A84C; font-family:-apple-system,BlinkMacSystemFont,'PingFang SC','Noto Sans SC',sans-serif; }
+    .slide { min-height:100vh; display:flex; align-items:center; justify-content:center; padding:60px 40px; page-break-after:always; }
+    .slide-inner { max-width:900px; width:100%; }
+
+    /* Slide 1 — 封面 */
+    .s1 { text-align:center; }
+    .s1 .logo-img { width:280px; margin-bottom:40px; }
+    .s1 h1 { font-size:56px; font-weight:300; letter-spacing:6px; margin-bottom:4px; }
+    .s1 h1 .s { color:#D4AF37; } .s1 h1 .m { color:#E8D48B; font-weight:600; }
+    .s1 .cn { font-size:28px; color:#C9A84C; letter-spacing:16px; margin-bottom:32px; }
+    .s1 .line { width:60px; height:1px; background:linear-gradient(90deg,transparent,#D4AF37,transparent); margin:0 auto 36px auto; }
+    .s1 .meta { font-size:13px; color:#6B5A2E; letter-spacing:4px; line-height:2; }
+
+    /* Slide 2 — 设计概念 */
+    .s2 { text-align:center; }
+    .s2 h2 { font-size:28px; font-weight:300; color:#E8D48B; letter-spacing:8px; margin-bottom:40px; }
+    .s2 .grid { display:grid; grid-template-columns:1fr 1fr; gap:24px; text-align:left; }
+    .s2 .card { background:#111; border:1px solid #1E1E1E; border-radius:12px; padding:24px 28px; }
+    .s2 .card .icon { font-size:24px; margin-bottom:8px; }
+    .s2 .card h3 { font-size:16px; color:#E8D48B; font-weight:500; letter-spacing:2px; margin-bottom:6px; }
+    .s2 .card p { font-size:13px; color:#8B7A4E; line-height:1.8; font-weight:300; }
+
+    /* Slide 3 — Logo 展示 */
+    .s3 { text-align:center; }
+    .s3 h2 { font-size:28px; font-weight:300; color:#E8D48B; letter-spacing:8px; margin-bottom:40px; }
+    .s3 .showcase { display:flex; gap:32px; justify-content:center; flex-wrap:wrap; }
+    .s3 .item { background:#111; border:1px solid #1E1E1E; border-radius:12px; padding:28px; flex:1; min-width:240px; max-width:380px; }
+    .s3 .item img { width:100%; max-width:300px; }
+    .s3 .item .label { margin-top:12px; font-size:14px; color:#B8922E; letter-spacing:2px; }
+    .s3 .item .use { font-size:11px; color:#5A4A1E; margin-top:4px; }
+
+    /* Slide 4 — 配色 & 字体 */
+    .s4 { text-align:center; }
+    .s4 h2 { font-size:28px; font-weight:300; color:#E8D48B; letter-spacing:8px; margin-bottom:40px; }
+    .s4 .colors { display:flex; gap:24px; justify-content:center; margin-bottom:40px; }
+    .s4 .swatch { text-align:center; flex:1; max-width:120px; }
+    .s4 .swatch .dot { width:64px; height:64px; border-radius:50%; margin:0 auto 8px auto; border:1px solid #2A2A2A; }
+    .s4 .swatch .nm { font-size:13px; color:#C9A84C; font-weight:500; }
+    .s4 .swatch .hx { font-size:11px; color:#6B5A2E; font-family:'SF Mono',monospace; }
+    .s4 .spec { display:flex; gap:32px; justify-content:center; text-align:left; }
+    .s4 .spec div { background:#111; border:1px solid #1E1E1E; border-radius:8px; padding:16px 20px; }
+    .s4 .spec .t { font-size:11px; color:#6B5A2E; letter-spacing:2px; margin-bottom:4px; }
+    .s4 .spec .v { font-size:15px; color:#E8D48B; }
+
+    /* Slide 5 — 品牌文案 */
+    .s5 { text-align:center; }
+    .s5 h2 { font-size:28px; font-weight:300; color:#E8D48B; letter-spacing:8px; margin-bottom:40px; }
+    .s5 .copy { font-size:17px; color:#8B7A4E; line-height:2.4; font-weight:300; letter-spacing:3px; }
+    .s5 .copy em { color:#E8D48B; font-style:normal; }
+
+    /* Slide 6 — 应用场景 */
+    .s6 { text-align:center; }
+    .s6 h2 { font-size:28px; font-weight:300; color:#E8D48B; letter-spacing:8px; margin-bottom:40px; }
+    .s6 .usages { display:grid; grid-template-columns:repeat(3,1fr); gap:20px; }
+    .s6 .use-card { background:#111; border:1px solid #1E1E1E; border-radius:8px; padding:24px 16px; }
+    .s6 .use-card .emoji { font-size:32px; margin-bottom:8px; }
+    .s6 .use-card .ttl { font-size:14px; color:#D4AF37; font-weight:500; letter-spacing:2px; }
+    .s6 .use-card .desc { font-size:11px; color:#6B5A2E; margin-top:4px; }
+
+    /* Slide 7 — 结尾 */
+    .s7 { text-align:center; }
+    .s7 h2 { font-size:36px; font-weight:300; letter-spacing:6px; margin-bottom:8px; }
+    .s7 h2 .s { color:#D4AF37; } .s7 h2 .m { color:#E8D48B; font-weight:600; }
+    .s7 .cn { font-size:22px; color:#C9A84C; letter-spacing:12px; margin-bottom:24px; }
+    .s7 .line { width:40px; height:1px; background:linear-gradient(90deg,transparent,#D4AF37,transparent); margin:0 auto 24px auto; }
+    .s7 p { font-size:14px; color:#6B5A2E; letter-spacing:3px; }
+
+    @media print {
+      body { background:#0A0A0A; -webkit-print-color-adjust:exact; }
+      .slide { min-height:100vh; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- Slide 1: 封面 -->
+<div class="slide s1">
+  <div class="slide-inner">
+    <img class="logo-img" src="logo-blackgold.svg" alt="SenseMind Logo">
+    <h1><span class="s">Sense</span><span class="m">Mind</span></h1>
+    <div class="cn">风味求索</div>
+    <div class="line"></div>
+    <div class="meta">
+      风味求索（杭州）生物科技有限公司<br>
+      品牌视觉识别方案
+    </div>
+  </div>
+</div>
+
+<!-- Slide 2: 设计概念 -->
+<div class="slide s2">
+  <div class="slide-inner">
+    <h2>设 计 语 言</h2>
+    <div class="grid">
+      <div class="card">
+        <div class="icon">&#9650;&#9650;</div>
+        <h3>M · Mind 心智</h3>
+        <p>山型双峰结构，15px 古铜金。厚重如山——代表科学、心智、四十年求索的坚实积淀。</p>
+      </div>
+      <div class="card">
+        <div class="icon">&#8768;</div>
+        <h3>S · Sense 感官</h3>
+        <p>5px 亮金丝线，穿行于 M 双谷之间。轻盈如香——代表风味、艺术、从舌尖到心灵的流动。</p>
+      </div>
+      <div class="card">
+        <div class="icon">&#9711;</div>
+        <h3>M + S = 品牌内核</h3>
+        <p>感官丝线穿行于心智山峦——「从科学，到艺术；从舌尖，到心灵」——唯一的交汇点就是 SenseMind 的灵魂所在。</p>
+      </div>
+      <div class="card">
+        <div class="icon">&#xe000;</div>
+        <h3>不断攀登的山峰</h3>
+        <p>M 的每一道弧线都是一次攀登——登顶、下坡、再攀登——呼应品牌「求索不止」的精神。</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Slide 3: Logo 展示 -->
+<div class="slide s3">
+  <div class="slide-inner">
+    <h2>Logo 体 系</h2>
+    <div class="showcase">
+      <div class="item">
+        <img src="logo-blackgold.svg" alt="主 Logo">
+        <div class="label">主 Logo · 徽章版</div>
+        <div class="use">名片 / 包装 / 展会背板</div>
+      </div>
+      <div class="item">
+        <img src="logo-icon.svg" alt="图标版">
+        <div class="label">纯图标版</div>
+        <div class="use">App 图标 / Favicon / 社交媒体</div>
+      </div>
+      <div class="item">
+        <img src="logo-horizontal.svg" alt="横向版">
+        <div class="label">横向版</div>
+        <div class="use">网站导航 / 信笺页眉 / 文件抬头</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Slide 4: 配色 & 规格 -->
+<div class="slide s4">
+  <div class="slide-inner">
+    <h2>品 牌 色 盘</h2>
+    <div class="colors">
+      <div class="swatch">
+        <div class="dot" style="background:#0A0A0A;"></div>
+        <div class="nm">玄墨</div>
+        <div class="hx">#0A0A0A</div>
+      </div>
+      <div class="swatch">
+        <div class="dot" style="background:#8B6918;"></div>
+        <div class="nm">古铜金</div>
+        <div class="hx">#8B6918</div>
+      </div>
+      <div class="swatch">
+        <div class="dot" style="background:#D4AF37;"></div>
+        <div class="nm">璨金</div>
+        <div class="hx">#D4AF37</div>
+      </div>
+      <div class="swatch">
+        <div class="dot" style="background:#F5EDC0;"></div>
+        <div class="nm">淡金</div>
+        <div class="hx">#F5EDC0</div>
+      </div>
+    </div>
+    <div class="spec">
+      <div><div class="t">M 线宽</div><div class="v">15px · Mind</div></div>
+      <div><div class="t">S 线宽</div><div class="v">5px · Sense</div></div>
+      <div><div class="t">重量比</div><div class="v">3 : 1</div></div>
+      <div><div class="t">格式</div><div class="v">SVG 矢量</div></div>
+    </div>
+  </div>
+</div>
+
+<!-- Slide 5: 品牌文案 -->
+<div class="slide s5">
+  <div class="slide-inner">
+    <h2>品 牌 意 境</h2>
+    <div class="copy">
+      求索<em>风味圣境</em>，迈越<em>感官边界</em><br><br>
+      四十年求索，凝练每一滴<em>风味真谛</em><br>
+      以<em>科学</em>为基，求索不止<br>
+      成就您下一个<em>市场赢家</em><br><br>
+      我们不止于调制香精<br>
+      更在每一缕香气中<br>
+      铺设从<em>感官到心智</em>的路径——<br><br>
+      从<em>舌尖</em>，到<em>心灵</em><br>
+      从<em>科学</em>，到<em>艺术</em>
+    </div>
+  </div>
+</div>
+
+<!-- Slide 6: 应用场景 -->
+<div class="slide s6">
+  <div class="slide-inner">
+    <h2>应 用 场 景</h2>
+    <div class="usages">
+      <div class="use-card">
+        <div class="emoji">&#129534;</div>
+        <div class="ttl">产品包装</div>
+        <div class="desc">香精瓶身标签 · 外箱 · 封口贴</div>
+      </div>
+      <div class="use-card">
+        <div class="emoji">&#128188;</div>
+        <div class="ttl">商务物料</div>
+        <div class="desc">名片 · 信纸 · 合同封面 · 手提袋</div>
+      </div>
+      <div class="use-card">
+        <div class="emoji">&#127760;</div>
+        <div class="ttl">数字媒体</div>
+        <div class="desc">官网 · App 图标 · 公众号 · 视频水印</div>
+      </div>
+      <div class="use-card">
+        <div class="emoji">&#128209;</div>
+        <div class="ttl">展会物料</div>
+        <div class="desc">展位背板 · 易拉宝 · 宣传册 · 邀请函</div>
+      </div>
+      <div class="use-card">
+        <div class="emoji">&#128084;</div>
+        <div class="ttl">员工周边</div>
+        <div class="desc">工服刺绣 · 胸牌 · 笔记本 · 马克杯</div>
+      </div>
+      <div class="use-card">
+        <div class="emoji">&#128640;</div>
+        <div class="ttl">品牌延展</div>
+        <div class="desc">产品线子品牌 · 联名合作 · 衍生文创</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Slide 7: 结尾 -->
+<div class="slide s7">
+  <div class="slide-inner">
+    <h2><span class="s">Sense</span><span class="m">Mind</span></h2>
+    <div class="cn">风味求索</div>
+    <div class="line"></div>
+    <p>从舌尖，到心灵 · 从科学，到艺术</p>
+  </div>
+</div>
+
+</body>
+</html>

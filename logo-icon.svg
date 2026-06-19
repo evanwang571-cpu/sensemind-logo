@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <defs>
+    <linearGradient id="goldM" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#B8942E"/>
+      <stop offset="100%" stop-color="#8B6918"/>
+    </linearGradient>
+    <linearGradient id="goldS" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#E0C878"/>
+      <stop offset="40%" stop-color="#EDE0A0"/>
+      <stop offset="100%" stop-color="#F5EDC0"/>
+    </linearGradient>
+    <radialGradient id="bg" cx="50%" cy="50%" r="48%">
+      <stop offset="0%" stop-color="#151515"/>
+      <stop offset="100%" stop-color="#080808"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="400" height="400" rx="48" fill="url(#bg)"/>
+
+  <path d="M 105,285
+           C 122,212 132,162 135,125
+           C 140,158 168,205 183,193
+           C 197,182 205,170 213,170
+           C 221,170 229,182 243,193
+           C 258,205 286,158 291,125
+           C 294,162 304,212 321,285"
+        fill="none" stroke="url(#goldM)" stroke-width="13"
+        stroke-linecap="round" stroke-linejoin="round"/>
+
+  <path d="M 302,112
+           C 235,74 152,118 164,162
+           C 178,210 275,208 245,252
+           C 215,290 136,295 116,278"
+        fill="none" stroke="url(#goldS)" stroke-width="4.5"
+        stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

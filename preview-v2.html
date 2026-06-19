@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SenseMind · 风味求索 — Logo 设计</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Noto Sans SC', sans-serif;
+      background: #080808;
+      color: #C9A84C;
+      padding: 48px 20px;
+    }
+    .container { max-width: 960px; margin: 0 auto; }
+
+    .header { text-align: center; margin-bottom: 44px; }
+    .header .brand {
+      font-size: 34px; font-weight: 300; letter-spacing: 2px; margin-bottom: 2px;
+    }
+    .header .brand .s1 { color: #D4AF37; }
+    .header .brand .s2 { color: #E8D48B; font-weight: 600; }
+    .header .cn { font-size: 18px; color: #B8922E; letter-spacing: 10px; }
+    .header .divider {
+      width: 50px; height: 1px;
+      background: linear-gradient(90deg, transparent, #D4AF37, transparent);
+      margin: 14px auto 0 auto;
+    }
+
+    .section { margin-bottom: 36px; }
+    .section h2 {
+      text-align: center; font-size: 16px; font-weight: 400;
+      color: #E8D48B; letter-spacing: 6px; margin-bottom: 12px;
+    }
+    .cards { display: flex; gap: 24px; justify-content: center; flex-wrap: wrap; }
+    .card {
+      background: #111; border: 1px solid #1E1E1E; border-radius: 12px;
+      padding: 24px; text-align: center; flex: 1; min-width: 280px; max-width: 460px;
+    }
+    .card img { width: 100%; max-width: 360px; height: auto; }
+    .card .label { margin-top: 10px; font-size: 13px; color: #B8922E; letter-spacing: 2px; }
+    .card .note { font-size: 11px; color: #5A4A1E; margin-top: 2px; }
+
+    .notes {
+      background: #111; border: 1px solid #1E1E1E; border-radius: 12px;
+      padding: 28px 32px; max-width: 500px; margin: 0 auto 36px auto;
+      display: grid; grid-template-columns: 1fr 1fr; gap: 16px;
+    }
+    .notes .item { border-left: 1px solid #D4AF37; padding-left: 14px; }
+    .notes .item .sym { color: #E8D48B; font-size: 14px; margin-bottom: 2px; }
+    .notes .item .txt { font-size: 11px; color: #8B7A4E; line-height: 1.6; }
+
+    .colors {
+      background: #111; border: 1px solid #1E1E1E; border-radius: 12px;
+      padding: 22px 28px; max-width: 440px; margin: 0 auto 36px auto;
+      display: flex; gap: 18px; justify-content: center; text-align: center;
+    }
+    .colors .sw { flex: 1; min-width: 70px; }
+    .colors .dot { width: 40px; height: 40px; border-radius: 50%; margin: 0 auto 6px auto; border: 1px solid #2A2A2A; }
+    .colors .nm { font-size: 11px; color: #C9A84C; }
+    .colors .hx { font-size: 10px; color: #6B5A2E; font-family: 'SF Mono', monospace; }
+
+    .footer { text-align: center; font-size: 11px; color: #4A3A1E; line-height: 2.2; margin-top: 20px; }
+    .footer code { color: #8B7A4E; font-family: 'SF Mono', 'Menlo', monospace; font-size: 10px; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <div class="brand"><span class="s1">Sense</span><span class="s2">Mind</span></div>
+      <div class="cn">风味求索</div>
+      <div class="divider"></div>
+    </div>
+
+    <div class="section">
+      <h2>主 Logo</h2>
+      <div class="cards">
+        <div class="card">
+          <img src="logo-blackgold.svg" alt="SenseMind 主 Logo">
+          <div class="label">黑金徽章版</div>
+          <div class="note">名片 · 包装 · 展会背板</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>衍生版本</h2>
+      <div class="cards">
+        <div class="card">
+          <img src="logo-icon.svg" alt="图标版">
+          <div class="label">纯图标版</div>
+          <div class="note">App 图标 / Favicon / 社交媒体</div>
+        </div>
+        <div class="card">
+          <img src="logo-horizontal.svg" alt="横向版">
+          <div class="label">横向版</div>
+          <div class="note">网站导航栏 / 信笺页眉</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="notes">
+      <div class="item">
+        <div class="sym">M</div>
+        <div class="txt"><b>Mind</b> · 心智/科学 — 结构骨架，璨金色，圆润中带着坚定</div>
+      </div>
+      <div class="item">
+        <div class="sym">S</div>
+        <div class="txt"><b>Sense</b> · 感官/艺术 — 流动曲线，淡金色，穿过 M 的两个峰谷</div>
+      </div>
+      <div class="item">
+        <div class="sym">S + M 交织</div>
+        <div class="txt">两笔线条，有机组合 —「从舌尖，到心灵；从科学，到艺术」</div>
+      </div>
+    </div>
+
+    <div class="colors">
+      <div class="sw"><div class="dot" style="background:#0A0A0A;"></div><div class="nm">玄墨</div><div class="hx">#0A0A0A</div></div>
+      <div class="sw"><div class="dot" style="background:#D4AF37;"></div><div class="nm">璨金</div><div class="hx">#D4AF37</div></div>
+      <div class="sw"><div class="dot" style="background:#E8D48B;"></div><div class="nm">淡金</div><div class="hx">#E8D48B</div></div>
+      <div class="sw"><div class="dot" style="background:#B8922E;"></div><div class="nm">古铜</div><div class="hx">#B8922E</div></div>
+    </div>
+
+    <div class="footer">
+      矢量源文件：<code>/Users/evanwang/logo-designs/</code><br>
+      <code>logo-blackgold.svg</code> · <code>logo-icon.svg</code> · <code>logo-horizontal.svg</code>
+    </div>
+  </div>
+</body>
+</html>
