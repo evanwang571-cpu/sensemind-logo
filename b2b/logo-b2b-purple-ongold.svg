@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 640" width="600" height="640">
+  <defs>
+    <linearGradient id="colorM" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6B3FA0"/>
+      <stop offset="100%" stop-color="#4A2078"/>
+    </linearGradient>
+    <linearGradient id="colorS" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#8B5FC8"/>
+      <stop offset="50%" stop-color="#A880E0"/>
+      <stop offset="100%" stop-color="#C8A8F8"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="640" fill="#F5EDC0"/>
+
+  <path d="M 160,390 C 185,300 195,240 198,195 C 205,235 240,295 260,278 C 278,263 288,248 300,248 C 312,248 322,263 340,278 C 360,295 395,235 402,195 C 405,240 415,300 440,390"
+        fill="none" stroke="url(#colorM)" stroke-width="15" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 425,165 C 340,115 235,170 248,228 C 262,288 388,290 348,345 C 308,395 208,400 185,378"
+        fill="none" stroke="url(#colorS)" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <text x="300" y="480" text-anchor="middle" font-family="'Helvetica Neue',Helvetica,Arial,sans-serif" font-size="48" letter-spacing="4">
+    <tspan font-weight="300" fill="#6B3FA0">Sense</tspan><tspan font-weight="600" fill="#4A2078">Mind</tspan>
+  </text>
+  <text x="300" y="523" text-anchor="middle" font-family="'PingFang SC','Noto Sans SC','Heiti SC','Microsoft YaHei',sans-serif" font-size="25" font-weight="400" fill="#5B3090" letter-spacing="14">风味求索</text>
+  <line x1="200" y1="538" x2="400" y2="538" stroke="#6B3FA0" stroke-width="0.8" opacity="0.3"/>
+  <text x="300" y="562" text-anchor="middle" font-family="'PingFang SC','Noto Sans SC','Heiti SC',sans-serif" font-size="11" font-weight="400" fill="#6B5090" letter-spacing="4" opacity="0.8">风味求索（杭州）生物科技有限公司</text>
+  <text x="300" y="584" text-anchor="middle" font-family="'Helvetica Neue',Helvetica,Arial,sans-serif" font-size="9" font-weight="300" fill="#7B5A90" letter-spacing="5" opacity="0.6">FROM SCIENCE TO ART · RELIABLE FLAVOR SOLUTIONS</text>
+  <text x="300" y="618" text-anchor="middle" font-family="'SF Mono','Menlo',monospace" font-size="8" fill="#8B7AA0" letter-spacing="2" opacity="0.5">紫字金底</text>
+</svg>
