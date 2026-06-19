@@ -47,11 +47,13 @@ h2 .en{display:block;font-size:12px;color:#8B6918;letter-spacing:4px;font-weight
 .p6 .val .en{font-size:10px;color:#8B6918;letter-spacing:2px;margin-bottom:8px}
 .p6 .val .desc{font-size:11px;color:#8B7A4E;line-height:1.6}
 
-.p7 .techs{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
-.p7 .tech{background:#111;border:1px solid #1E1E1E;border-radius:10px;padding:28px 24px;text-align:center}
-.p7 .tech .icon{font-size:32px;margin-bottom:10px}
-.p7 .tech h3{font-size:16px;color:#E8D48B;letter-spacing:3px;margin-bottom:10px}
-.p7 .tech .desc{font-size:12px;color:#8B7A4E;line-height:1.8}
+.p7 .flow{display:flex;gap:0;align-items:stretch;justify-content:center}
+.p7 .node{flex:1;max-width:210px;text-align:center;position:relative;padding:0 12px}
+.p7 .node .ring{width:48px;height:48px;border-radius:50%;border:2px solid #D4AF37;margin:0 auto 16px auto;display:flex;align-items:center;justify-content:center;font-size:18px;color:#E8D48B;font-weight:600}
+.p7 .node h3{font-size:15px;color:#E8D48B;letter-spacing:2px;margin-bottom:8px}
+.p7 .node .desc{font-size:11px;color:#8B7A4E;line-height:1.7}
+.p7 .node::after{content:'';position:absolute;top:24px;left:62%;width:76%;height:1px;background:#D4AF37;opacity:0.25}
+.p7 .node:last-child::after{display:none}
 
 .p8{text-align:center}
 .p8 .big{font-size:24px;color:#E8D48B;letter-spacing:4px;line-height:2;margin-bottom:20px}
@@ -73,8 +75,8 @@ h2 .en{display:block;font-size:12px;color:#8B6918;letter-spacing:4px;font-weight
 
 <!-- P1 封面 -->
 <div class="slide p1"><div class="inner">
-  <img src="logo-blackgold.svg" alt="SenseMind 风味求索" style="width:260px;margin-bottom:20px">
-  <div class="line"></div>
+  <img src="logo-blackgold.svg" alt="SenseMind 风味求索" style="width:260px;margin-bottom:24px">
+  <div class="line" style="margin-bottom:24px"></div>
   <div class="full">风味求索（杭州）生物科技有限公司</div>
   <div class="full-en">SenseMind (Hangzhou) Biotechnology Co., Ltd.</div>
 </div></div>
@@ -181,26 +183,26 @@ h2 .en{display:block;font-size:12px;color:#8B6918;letter-spacing:4px;font-weight
 <!-- P7 AI技术 -->
 <div class="slide p7"><div class="inner">
   <h2>AI 全 链 路 智 能 平 台<span class="en">END-TO-END AI PLATFORM</span></h2>
-  <div class="techs">
-    <div class="tech">
-      <div class="icon">&#129504;</div>
-      <h3>AI 智能文献助理</h3>
-      <div class="desc">自动搜索最前沿技术资料<br>实时追踪全球风味科研动态<br>为研发团队提供数据驱动决策</div>
+  <div class="flow">
+    <div class="node">
+      <div class="ring">1</div>
+      <h3>AI 文献引擎</h3>
+      <div class="desc">自动搜索前沿技术资料<br>实时追踪全球风味科研<br>数据驱动研发决策</div>
     </div>
-    <div class="tech">
-      <div class="icon">&#9878;</div>
-      <h3>Gerstel 模块化分析平台</h3>
-      <div class="desc">整合高分辨 GC-MS 分析仪器<br>AI 自动快速检测关键痕量成分<br>分子级风味精准解码</div>
+    <div class="node">
+      <div class="ring">2</div>
+      <h3>Gerstel GC-MS 平台</h3>
+      <div class="desc">模块化自动化分析<br>AI 快速检测痕量成分<br>分子级风味精准解码</div>
     </div>
-    <div class="tech">
-      <div class="icon">&#127987;</div>
+    <div class="node">
+      <div class="ring">3</div>
       <h3>AI 调香助理</h3>
-      <div class="desc">自有知识产权 · 资深调香师 + AI 协同<br>快速响应客户风味需求<br>智能优化配方，缩短研发周期</div>
+      <div class="desc">自有知识产权<br>调香师 + AI 协同创香<br>快速响应 · 智能优化</div>
     </div>
-    <div class="tech">
-      <div class="icon">&#9881;</div>
+    <div class="node">
+      <div class="ring">4</div>
       <h3>AI 供应链智控</h3>
-      <div class="desc">采购 · 生产 · 品控全流程 AI 赋能<br>原料溯源 · 排产优化 · 质量追踪<br>端到端高效运行，品质如一</div>
+      <div class="desc">采购 · 生产 · 品控<br>全流程 AI 赋能<br>端到端高效运行</div>
     </div>
   </div>
 </div></div>
