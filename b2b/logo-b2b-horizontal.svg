@@ -15,36 +15,32 @@
     </linearGradient>
   </defs>
 
-  <!-- ===== 左侧：六边形 + SM ===== -->
-  <!-- 六边形外框 -->
-  <polygon points="105,45 157,75 157,135 105,165 53,135 53,75"
+  <!-- 六边形 + SM -->
+  <polygon points="105,48 157,78 157,138 105,168 53,138 53,78"
            fill="none" stroke="url(#goldHex)" stroke-width="2" stroke-linejoin="round"/>
   <polygon points="105,60 145,82 145,128 105,150 65,128 65,82"
            fill="url(#goldHex)" fill-opacity="0.03"
            stroke="url(#goldHex)" stroke-width="0.6" stroke-linejoin="round"/>
 
-  <!-- 顶点 -->
-  <circle cx="105" cy="45" r="2.2" fill="url(#goldHex)" opacity="0.7"/>
-  <circle cx="157" cy="75" r="2.2" fill="url(#goldHex)" opacity="0.7"/>
-  <circle cx="157" cy="135" r="2.2" fill="url(#goldHex)" opacity="0.7"/>
-  <circle cx="105" cy="165" r="2.2" fill="url(#goldHex)" opacity="0.7"/>
-  <circle cx="53" cy="135" r="2.2" fill="url(#goldHex)" opacity="0.7"/>
-  <circle cx="53" cy="75" r="2.2" fill="url(#goldHex)" opacity="0.7"/>
+  <circle cx="105" cy="48" r="2.2" fill="url(#goldHex)" opacity="0.7"/>
+  <circle cx="157" cy="78" r="2.2" fill="url(#goldHex)" opacity="0.7"/>
+  <circle cx="157" cy="138" r="2.2" fill="url(#goldHex)" opacity="0.7"/>
+  <circle cx="105" cy="168" r="2.2" fill="url(#goldHex)" opacity="0.7"/>
+  <circle cx="53" cy="138" r="2.2" fill="url(#goldHex)" opacity="0.7"/>
+  <circle cx="53" cy="78" r="2.2" fill="url(#goldHex)" opacity="0.7"/>
 
-  <!-- M — 粗 9px -->
-  <path d="M 76,148 C 82,120 87,100 88,88 C 91,100 100,118 107,114 C 113,110 118,105 122,105 C 126,105 131,110 137,114 C 144,118 153,100 156,88 C 157,100 162,120 168,148"
-        fill="none" stroke="url(#goldM)" stroke-width="9"
+  <!-- SM -->
+  <path d="M 63,155 C 72,117 78,92 79,75 C 83,92 97,116 105,109 C 113,103 117,97 121,97 C 125,97 129,103 137,109 C 145,116 159,92 163,75 C 164,92 170,117 179,155"
+        fill="none" stroke="url(#goldM)" stroke-width="8"
         stroke-linecap="round" stroke-linejoin="round"/>
 
-  <!-- S — 细 3.5px -->
-  <path d="M 168,102 C 143,86 118,96 123,112 C 128,128 168,123 158,138 C 148,152 118,153 111,146"
+  <path d="M 166,80 C 126,58 80,82 86,104 C 93,128 149,130 133,153 C 118,174 74,176 64,167"
         fill="none" stroke="url(#goldS)" stroke-width="3.5"
         stroke-linecap="round" stroke-linejoin="round"/>
 
-  <!-- ===== 分隔线 ===== -->
   <line x1="200" y1="55" x2="200" y2="155" stroke="url(#goldHex)" stroke-width="0.8" opacity="0.25"/>
 
-  <!-- ===== 右侧文字 ===== -->
+  <!-- 文字 -->
   <text x="220" y="108" text-anchor="start"
         font-family="'Helvetica Neue', Helvetica, Arial, sans-serif"
         font-size="38" letter-spacing="3">

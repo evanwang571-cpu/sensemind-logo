@@ -21,14 +21,13 @@
 
   <rect width="400" height="400" rx="48" fill="url(#bg)"/>
 
-  <!-- 六边形外框 -->
+  <!-- 双层六边形 -->
   <polygon points="200,80 304,140 304,260 200,320 96,260 96,140"
            fill="none" stroke="url(#goldHex)" stroke-width="2.5" stroke-linejoin="round"/>
   <polygon points="200,100 284,148 284,252 200,300 116,252 116,148"
            fill="url(#goldHex)" fill-opacity="0.03"
            stroke="url(#goldHex)" stroke-width="0.8" stroke-linejoin="round"/>
 
-  <!-- 顶点 -->
   <circle cx="200" cy="80" r="3" fill="url(#goldHex)" opacity="0.7"/>
   <circle cx="304" cy="140" r="3" fill="url(#goldHex)" opacity="0.7"/>
   <circle cx="304" cy="260" r="3" fill="url(#goldHex)" opacity="0.7"/>
@@ -36,13 +35,12 @@
   <circle cx="96" cy="260" r="3" fill="url(#goldHex)" opacity="0.7"/>
   <circle cx="96" cy="140" r="3" fill="url(#goldHex)" opacity="0.7"/>
 
-  <!-- M — 粗 13px -->
-  <path d="M 145,270 C 158,222 166,185 168,162 C 173,185 190,218 202,210 C 213,203 220,194 226,194 C 232,194 239,203 250,210 C 262,218 279,185 284,162 C 286,185 294,222 307,270"
-        fill="none" stroke="url(#goldM)" stroke-width="13"
+  <!-- SM — 与主品牌比例一致 -->
+  <path d="M 118,282 C 135,218 145,175 147,142 C 153,170 178,212 192,200 C 206,189 213,177 220,177 C 227,177 234,189 248,200 C 262,212 287,170 293,142 C 295,175 305,218 322,282"
+        fill="none" stroke="url(#goldM)" stroke-width="12"
         stroke-linecap="round" stroke-linejoin="round"/>
 
-  <!-- S — 细 4.5px -->
-  <path d="M 308,180 C 258,150 213,168 222,198 C 232,228 302,218 284,248 C 268,274 216,276 204,264"
+  <path d="M 306,120 C 236,80 155,122 165,163 C 177,207 276,210 245,252 C 214,290 136,294 118,278"
         fill="none" stroke="url(#goldS)" stroke-width="4.5"
         stroke-linecap="round" stroke-linejoin="round"/>
 </svg>

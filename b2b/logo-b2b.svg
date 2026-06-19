@@ -21,65 +21,65 @@
 
   <rect width="600" height="640" fill="url(#bg)"/>
 
-  <!-- ===== 商务六边形外框 ===== -->
+  <!-- ===== 双层六边形 ===== -->
   <!-- 外框 -->
-  <polygon points="300,103 440,184 440,346 300,427 160,346 160,184"
+  <polygon points="300,108 443,190 443,352 300,434 157,352 157,190"
            fill="none" stroke="url(#goldHex)" stroke-width="2.5" stroke-linejoin="round"/>
   <!-- 内框 -->
-  <polygon points="300,126 418,195 418,335 300,404 182,335 182,195"
+  <polygon points="300,132 420,202 420,338 300,408 180,338 180,202"
            fill="url(#goldHex)" fill-opacity="0.03"
            stroke="url(#goldHex)" stroke-width="1" stroke-linejoin="round"/>
 
-  <!-- 六边形顶点 -->
-  <circle cx="300" cy="103" r="3.5" fill="url(#goldHex)" opacity="0.7"/>
-  <circle cx="440" cy="184" r="3.5" fill="url(#goldHex)" opacity="0.7"/>
-  <circle cx="440" cy="346" r="3.5" fill="url(#goldHex)" opacity="0.7"/>
-  <circle cx="300" cy="427" r="3.5" fill="url(#goldHex)" opacity="0.7"/>
-  <circle cx="160" cy="346" r="3.5" fill="url(#goldHex)" opacity="0.7"/>
-  <circle cx="160" cy="184" r="3.5" fill="url(#goldHex)" opacity="0.7"/>
+  <!-- 顶点 -->
+  <circle cx="300" cy="108" r="3.5" fill="url(#goldHex)" opacity="0.7"/>
+  <circle cx="443" cy="190" r="3.5" fill="url(#goldHex)" opacity="0.7"/>
+  <circle cx="443" cy="352" r="3.5" fill="url(#goldHex)" opacity="0.7"/>
+  <circle cx="300" cy="434" r="3.5" fill="url(#goldHex)" opacity="0.7"/>
+  <circle cx="157" cy="352" r="3.5" fill="url(#goldHex)" opacity="0.7"/>
+  <circle cx="157" cy="190" r="3.5" fill="url(#goldHex)" opacity="0.7"/>
 
-  <!-- ===== 艺术版 SM（原封不动保留） ===== -->
+  <!-- ===== 艺术版 SM（与主品牌完全一致的坐标） ===== -->
   <!-- M — 山型，粗 15px -->
-  <path d="M 220,365
-           C 238,300 248,250 250,220
-           C 256,248 278,290 295,280
-           C 310,270 318,258 326,258
-           C 334,258 342,270 357,280
-           C 374,290 396,248 402,220
-           C 404,250 414,300 432,365"
+  <path d="M 160,390
+           C 185,300 195,240 198,195
+           C 205,235 240,295 260,278
+           C 278,263 288,248 300,248
+           C 312,248 322,263 340,278
+           C 360,295 395,235 402,195
+           C 405,240 415,300 440,390"
         fill="none" stroke="url(#goldM)" stroke-width="15"
         stroke-linecap="round" stroke-linejoin="round"/>
 
   <!-- S — 细 5px，亮金 -->
-  <path d="M 435,240
-           C 365,200 305,225 318,268
-           C 332,312 430,298 405,338
-           C 382,372 310,376 295,358"
+  <path d="M 425,165
+           C 340,115 235,170 248,228
+           C 262,288 388,290 348,345
+           C 308,395 208,400 185,378"
         fill="none" stroke="url(#goldS)" stroke-width="5"
         stroke-linecap="round" stroke-linejoin="round"/>
 
   <!-- ===== 品牌文字 ===== -->
-  <text x="300" y="500" text-anchor="middle"
+  <text x="300" y="505" text-anchor="middle"
         font-family="'Helvetica Neue', Helvetica, Arial, sans-serif"
         font-size="48" letter-spacing="4">
     <tspan font-weight="300" fill="#D4AF37">Sense</tspan><tspan font-weight="600" fill="#E8D48B">Mind</tspan>
   </text>
 
-  <text x="300" y="545" text-anchor="middle"
+  <text x="300" y="548" text-anchor="middle"
         font-family="'PingFang SC', 'Noto Sans SC', 'Heiti SC', 'Microsoft YaHei', sans-serif"
         font-size="25" font-weight="400" fill="#C9A84C" letter-spacing="14">
     风味求索
   </text>
 
-  <line x1="200" y1="560" x2="400" y2="560" stroke="url(#goldHex)" stroke-width="0.8" opacity="0.3"/>
+  <line x1="200" y1="564" x2="400" y2="564" stroke="url(#goldHex)" stroke-width="0.8" opacity="0.3"/>
 
-  <text x="300" y="584" text-anchor="middle"
+  <text x="300" y="588" text-anchor="middle"
         font-family="'PingFang SC', 'Noto Sans SC', 'Heiti SC', sans-serif"
         font-size="11" font-weight="400" fill="#8B7A4E" letter-spacing="4" opacity="0.7">
     风味求索（杭州）生物科技有限公司
   </text>
 
-  <text x="300" y="606" text-anchor="middle"
+  <text x="300" y="610" text-anchor="middle"
         font-family="'Helvetica Neue', Helvetica, Arial, sans-serif"
         font-size="9" font-weight="300" fill="#6B5A2E" letter-spacing="5" opacity="0.5">
     FROM SCIENCE TO ART · RELIABLE FLAVOR SOLUTIONS
