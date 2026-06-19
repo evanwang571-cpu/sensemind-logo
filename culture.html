@@ -9,36 +9,25 @@
 body{background:#0A0A0A;color:#C9A84C;font-family:-apple-system,BlinkMacSystemFont,'PingFang SC','Noto Sans SC',serif;scroll-snap-type:y mandatory;overflow-y:scroll;height:100vh}
 .slide{min-height:100vh;display:flex;align-items:center;justify-content:center;padding:64px 48px;scroll-snap-align:start;page-break-after:always}
 .inner{max-width:900px;width:100%}
-
-/* 通用 */
 .line{width:50px;height:1px;background:linear-gradient(90deg,transparent,#D4AF37,transparent);margin:0 auto}
 h2{font-size:30px;font-weight:300;color:#E8D48B;letter-spacing:8px;text-align:center;margin-bottom:40px}
 h2 .en{display:block;font-size:12px;color:#8B6918;letter-spacing:4px;font-weight:300;margin-top:6px}
 
-/* P1 封面 */
 .p1{text-align:center}
-.p1 .sm{width:140px;margin-bottom:24px}
-.p1 h1{font-size:54px;font-weight:300;letter-spacing:6px;margin-bottom:2px}
-.p1 h1 .s{color:#D4AF37}.p1 h1 .m{color:#E8D48B;font-weight:600}
-.p1 .brand{font-size:24px;color:#C9A84C;letter-spacing:12px;margin-bottom:20px}
-.p1 .line{margin-bottom:20px}
 .p1 .full{font-size:12px;color:#8B6918;letter-spacing:3px;margin-bottom:8px}
 .p1 .full-en{font-size:10px;color:#6B5A2E;letter-spacing:1px}
 
-/* P2 愿景 */
 .p2{text-align:center}
 .p2 .hero{font-size:26px;color:#E8D48B;letter-spacing:6px;line-height:1.8;margin-bottom:28px}
 .p2 .hero em{color:#F5EDC0;font-style:normal;font-weight:600}
 .p2 .en-copy{font-size:14px;color:#9B7A2E;line-height:2;letter-spacing:2px;font-style:italic}
 
-/* P3 创始人 */
 .p3{text-align:center}
 .p3 .num{font-size:96px;font-weight:200;color:#D4AF37;line-height:1;margin-bottom:8px}
 .p3 .label{font-size:16px;color:#E8D48B;letter-spacing:8px;margin-bottom:28px}
 .p3 .quote{font-size:17px;color:#C9A84C;line-height:2.2;letter-spacing:3px}
 .p3 .quote em{color:#F5EDC0;font-style:normal}
 
-/* P4 双螺旋 */
 .p4 .dual{display:flex;gap:32px;justify-content:center;align-items:stretch}
 .p4 .col{flex:1;max-width:400px;background:#111;border:1px solid #1E1E1E;border-radius:12px;padding:36px 28px;text-align:center}
 .p4 .col .icon{font-size:36px;margin-bottom:10px}
@@ -47,33 +36,35 @@ h2 .en{display:block;font-size:12px;color:#8B6918;letter-spacing:4px;font-weight
 .p4 .col .en{font-size:11px;color:#6B5A2E;line-height:1.8;font-style:italic}
 .p4 .x{display:flex;align-items:center;font-size:28px;color:#D4AF37;font-weight:300}
 
-/* P5 品牌承诺 */
 .p5{text-align:center}
 .p5 .promise{font-size:20px;color:#D4AF37;line-height:2.4;letter-spacing:3px;margin-bottom:24px}
 .p5 .promise em{color:#F5EDC0;font-style:normal;font-size:23px}
 .p5 .en{font-size:14px;color:#9B7A2E;line-height:2.2;letter-spacing:2px;font-style:italic}
 
-/* P6 价值观 */
 .p6 .vals{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
 .p6 .val{background:#111;border:1px solid #1E1E1E;border-radius:10px;padding:22px 18px;border-top:3px solid #D4AF37;text-align:center}
 .p6 .val .zh{font-size:15px;color:#E8D48B;letter-spacing:3px;font-weight:500;margin-bottom:6px}
 .p6 .val .en{font-size:10px;color:#8B6918;letter-spacing:2px;margin-bottom:8px}
 .p6 .val .desc{font-size:11px;color:#8B7A4E;line-height:1.6}
 
-/* P7 使命 */
-.p7{text-align:center}
-.p7 .big{font-size:24px;color:#E8D48B;letter-spacing:4px;line-height:2;margin-bottom:20px}
-.p7 .big em{color:#F5EDC0;font-style:normal;font-weight:600}
-.p7 .en{font-size:14px;color:#9B7A2E;line-height:2.2;letter-spacing:2px;font-style:italic}
+.p7 .techs{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+.p7 .tech{background:#111;border:1px solid #1E1E1E;border-radius:10px;padding:28px 24px;text-align:center}
+.p7 .tech .icon{font-size:32px;margin-bottom:10px}
+.p7 .tech h3{font-size:16px;color:#E8D48B;letter-spacing:3px;margin-bottom:10px}
+.p7 .tech .desc{font-size:12px;color:#8B7A4E;line-height:1.8}
 
-/* P8 结尾 */
 .p8{text-align:center}
-.p8 h1{font-size:48px;font-weight:300;letter-spacing:6px;margin-bottom:4px}
-.p8 h1 .s{color:#D4AF37}.p8 h1 .m{color:#E8D48B;font-weight:600}
-.p8 .brand{font-size:22px;color:#C9A84C;letter-spacing:12px;margin-bottom:16px}
-.p8 .line{margin-bottom:16px}
-.p8 .tag{font-size:14px;color:#9B7A2E;letter-spacing:4px;line-height:2}
-.p8 .tag em{color:#E8D48B;font-style:normal}
+.p8 .big{font-size:24px;color:#E8D48B;letter-spacing:4px;line-height:2;margin-bottom:20px}
+.p8 .big em{color:#F5EDC0;font-style:normal;font-weight:600}
+.p8 .en{font-size:14px;color:#9B7A2E;line-height:2.2;letter-spacing:2px;font-style:italic}
+
+.p9{text-align:center}
+.p9 h1{font-size:48px;font-weight:300;letter-spacing:6px;margin-bottom:4px}
+.p9 h1 .s{color:#D4AF37}.p9 h1 .m{color:#E8D48B;font-weight:600}
+.p9 .brand{font-size:22px;color:#C9A84C;letter-spacing:12px;margin-bottom:16px}
+.p9 .line{margin-bottom:16px}
+.p9 .tag{font-size:14px;color:#9B7A2E;letter-spacing:4px;line-height:2}
+.p9 .tag em{color:#E8D48B;font-style:normal}
 
 @media print{body{scroll-snap-type:none}.slide{page-break-after:always;min-height:100vh}}
 </style>
@@ -113,7 +104,7 @@ h2 .en{display:block;font-size:12px;color:#8B6918;letter-spacing:4px;font-weight
   </div>
 </div></div>
 
-<!-- P4 品牌基因：双螺旋 -->
+<!-- P4 品牌基因 -->
 <div class="slide p4"><div class="inner">
   <h2>品 牌 基 因<span class="en">THE DOUBLE HELIX</span></h2>
   <div class="dual">
@@ -151,45 +142,72 @@ h2 .en{display:block;font-size:12px;color:#8B6918;letter-spacing:4px;font-weight
   </div>
 </div></div>
 
-<!-- P6 价值观 -->
+<!-- P6 核心价值观 -->
 <div class="slide p6"><div class="inner">
   <h2>核 心 价 值<span class="en">CORE VALUES</span></h2>
   <div class="vals">
     <div class="val">
       <div class="zh">求索不止</div>
       <div class="en">RELENTLESS PURSUIT</div>
-      <div class="desc">风味的疆域没有终点，我们永不满足于已知</div>
+      <div class="desc">风味的疆域没有终点<br>我们永不满足于已知</div>
     </div>
     <div class="val">
       <div class="zh">以科学为基</div>
       <div class="en">ROOTED IN SCIENCE</div>
-      <div class="desc">精密分子数据是每一款香精的底层逻辑</div>
+      <div class="desc">精密分子数据<br>是每一款香精的底层逻辑</div>
     </div>
     <div class="val">
       <div class="zh">成就客户</div>
       <div class="en">CLIENT SUCCESS FIRST</div>
-      <div class="desc">我们的成功定义于客户的市场胜出</div>
+      <div class="desc">我们的成功<br>定义于客户的市场胜出</div>
     </div>
     <div class="val">
       <div class="zh">感官至心智</div>
-      <div class="en">FROM SENSES TO SOUL</div>
-      <div class="desc">不只做风味，更铺设通往情感记忆的路径</div>
+      <div class="en">SENSES TO SOUL</div>
+      <div class="desc">不只做风味<br>更铺设通往情感记忆的路径</div>
     </div>
     <div class="val">
       <div class="zh">敬畏自然</div>
       <div class="en">HONORING NATURE</div>
-      <div class="desc">绿色提取 · 可持续采购 · 透明溯源</div>
+      <div class="desc">绿色提取 · 可持续采购<br>透明溯源</div>
     </div>
     <div class="val">
       <div class="zh">协作共创</div>
       <div class="en">CO-CREATION</div>
-      <div class="desc">与客户研发团队并肩，从概念到上市全程护航</div>
+      <div class="desc">与客户研发团队并肩<br>从概念到上市全程护航</div>
     </div>
   </div>
 </div></div>
 
-<!-- P7 使命 -->
+<!-- P7 AI技术 -->
 <div class="slide p7"><div class="inner">
+  <h2>AI 赋 能 研 发<span class="en">INTELLIGENT FLAVOR INNOVATION</span></h2>
+  <div class="techs">
+    <div class="tech">
+      <div class="icon">&#129504;</div>
+      <h3>AI 智能文献助理</h3>
+      <div class="desc">自动搜索最前沿技术资料<br>实时追踪全球风味科研动态<br>为研发团队提供数据驱动决策</div>
+    </div>
+    <div class="tech">
+      <div class="icon">&#9878;</div>
+      <h3>Gerstel 模块化分析平台</h3>
+      <div class="desc">整合高分辨 GC-MS 分析仪器<br>AI 自动快速检测关键痕量成分<br>分子级风味精准解码</div>
+    </div>
+    <div class="tech">
+      <div class="icon">&#127987;</div>
+      <h3>AI 调香助理</h3>
+      <div class="desc">自有知识产权 · 资深调香师 + AI 协同<br>快速响应客户风味需求<br>智能优化配方，缩短研发周期</div>
+    </div>
+    <div class="tech">
+      <div class="icon">&#9881;</div>
+      <h3>AI 供应链智控</h3>
+      <div class="desc">生产管理全过程 AI 赋能<br>原料溯源 · 品控追踪 · 排产优化<br>全程高效运行，品质如一</div>
+    </div>
+  </div>
+</div></div>
+
+<!-- P8 使命 -->
+<div class="slide p8"><div class="inner">
   <h2>我 们 的 使 命<span class="en">OUR MISSION</span></h2>
   <div class="big">
     以<em>科学</em>为基，求索不止<br>
@@ -201,8 +219,8 @@ h2 .en{display:block;font-size:12px;color:#8B6918;letter-spacing:4px;font-weight
   </div>
 </div></div>
 
-<!-- P8 结尾 -->
-<div class="slide p8"><div class="inner">
+<!-- P9 结尾 -->
+<div class="slide p9"><div class="inner">
   <h1><span class="s">Sense</span><span class="m">Mind</span></h1>
   <div class="brand">风味求索</div>
   <div class="line"></div>
