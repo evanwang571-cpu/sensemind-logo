@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 320" width="600" height="320">
+  <defs>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#D4AF37"/>
+      <stop offset="100%" stop-color="#B8942E"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="320" fill="#0A0A0A"/>
+
+  <!-- ===== 方案A: 求索之滴 ===== -->
+  <g transform="translate(100, 160)">
+    <!-- 外圈 — 搜索/探索 -->
+    <circle cx="0" cy="0" r="55" fill="none" stroke="url(#gold)" stroke-width="3.5"/>
+    <!-- 液滴 — 风味 -->
+    <path d="M 0,-35 C 20,-15 25,15 0,35 C -25,15 -20,-15 0,-35 Z" fill="url(#gold)" opacity="0.9"/>
+    <!-- 高光切口 — 求索的方向感 -->
+    <circle cx="15" cy="-10" r="8" fill="#0A0A0A"/>
+    <text x="0" y="80" text-anchor="middle" font-family="'PingFang SC',sans-serif" font-size="12" fill="#9B7A2E" letter-spacing="4">A · 求索之滴</text>
+  </g>
+
+  <!-- ===== 方案B: 未完成的圆 ===== -->
+  <g transform="translate(300, 160)">
+    <!-- 开口的圆 — 永不停歇的求索 -->
+    <path d="M 0,-55 A 55,55 0 1,1 -25,49" fill="none" stroke="url(#gold)" stroke-width="4" stroke-linecap="round"/>
+    <!-- 终点金点 — 风味真谛 -->
+    <circle cx="-25" cy="50" r="6" fill="url(#gold)"/>
+    <!-- 起点金点 — 探索的起点 -->
+    <circle cx="0" cy="-55" r="3" fill="url(#gold)" opacity="0.5"/>
+    <text x="0" y="80" text-anchor="middle" font-family="'PingFang SC',sans-serif" font-size="12" fill="#9B7A2E" letter-spacing="4">B · 未完成的圆</text>
+  </g>
+
+  <!-- ===== 方案C: 味蕾 ===== -->
+  <g transform="translate(500, 160)">
+    <!-- 简化味蕾造型 — 三个弧线汇聚 -->
+    <path d="M -40,20 Q -20,-35 0,-20" fill="none" stroke="url(#gold)" stroke-width="3.5" stroke-linecap="round"/>
+    <path d="M -20,30 Q 0,-40 20,30" fill="none" stroke="url(#gold)" stroke-width="3.5" stroke-linecap="round"/>
+    <path d="M 0,-20 Q 20,-35 40,20" fill="none" stroke="url(#gold)" stroke-width="3.5" stroke-linecap="round"/>
+    <!-- 底部汇聚点 -->
+    <circle cx="0" cy="30" r="5" fill="url(#gold)"/>
+    <text x="0" y="80" text-anchor="middle" font-family="'PingFang SC',sans-serif" font-size="12" fill="#9B7A2E" letter-spacing="4">C · 味蕾</text>
+  </g>
+</svg>

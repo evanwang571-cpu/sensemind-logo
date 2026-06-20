@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <defs>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#D4AF37"/>
+      <stop offset="100%" stop-color="#B8942E"/>
+    </linearGradient>
+    <radialGradient id="bg" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#151515"/>
+      <stop offset="100%" stop-color="#0A0A0A"/>
+    </radialGradient>
+  </defs>
+  <rect width="400" height="400" rx="48" fill="url(#bg)"/>
+
+  <!--
+    DeepSeek 风格的核心：
+    极简几何、负空间巧妙、一个形状讲完故事
+
+    风味求索 = 风味（液滴/味蕾）+ 求索（探索/路径/未完成）
+
+    方案：液滴内部开口 — 形似液滴，中间的负空间形成向外的箭头/路径
+    代表：风味内部有无限可探索的疆域
+  -->
+
+  <!-- 外轮廓 — 液滴形状 -->
+  <path d="M 200,95
+           C 260,95 290,155 290,210
+           C 290,275 250,315 200,315
+           C 150,315 110,275 110,210
+           C 110,155 140,95 200,95 Z"
+        fill="none" stroke="url(#gold)" stroke-width="5" stroke-linejoin="round"/>
+
+  <!-- 内部负空间 — 未完成的开口，代表"求索"永无止境 -->
+  <path d="M 200,310 C 240,310 275,275 275,220"
+        fill="none" stroke="url(#gold)" stroke-width="5" stroke-linecap="round"/>
+
+  <!-- 向上的探寻方向 — 一条金线从内部指向开口 -->
+  <path d="M 200,270 C 210,240 240,200 275,160"
+        fill="none" stroke="url(#gold)" stroke-width="3.5" stroke-linecap="round" opacity="0.6"/>
+
+  <!-- 探寻路径的终点 — 小金点 -->
+  <circle cx="280" cy="150" r="5" fill="url(#gold)"/>
+</svg>

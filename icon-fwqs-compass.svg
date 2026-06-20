@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <defs>
+    <linearGradient id="gold" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#D4AF37"/>
+      <stop offset="100%" stop-color="#E8D48B"/>
+    </linearGradient>
+    <radialGradient id="bg" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#151515"/>
+      <stop offset="100%" stop-color="#0A0A0A"/>
+    </radialGradient>
+  </defs>
+  <rect width="400" height="400" rx="48" fill="url(#bg)"/>
+
+  <!--
+    极简指南针："求索"= 永远在路上的方向感
+    一个未闭合的圆 + 一枚金点 = 求索风味圣境
+    像 DeepSeek 一样简单，一个形状讲完
+  -->
+
+  <!-- 开口的圆 — 永在求索 -->
+  <path d="M 200,80 A 120,120 0 1,1 125,175" fill="none" stroke="url(#gold)" stroke-width="6" stroke-linecap="round"/>
+  <!-- 探索中的金点 — 风味圣境 -->
+  <circle cx="125" cy="175" r="8" fill="url(#gold)"/>
+</svg>
